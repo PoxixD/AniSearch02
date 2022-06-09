@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/recommendation.js"></script>
+    <title>Anime Search</title>
+  </head>
+  <body
+  style="background-image: url('../images/GokuChilling.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;">
+
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="page2.html"><u>Anime Search</u></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="quotes.html"
+                >Anime Quotes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="impressum.html"
+                >Impressum</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="favourites.html"
+                >Favourite anime</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> <!-- Navbar End-->
+
+
+
+    <table class="table table-striped">
+      <tr>
+        <th>Image</th>
+        <th>Information</th> <!-- Header-->
+        <th>Values</th>
+      </tr>
+      <tr> <!-- Row 1-->
+      <td rowspan="9">
+        <img id="rec_image" src = " "> </img>
+      </td>
+      <td>
+      <p>Title</p>
+    </td>
+    <td>
+      <p id="rec_title">-</p>
+    </td>
+      </tr>
+      <tr> <!-- Row 2-->
+    
+         <td> <p >Episodes</p> </td>
+         <td> <p id="rec_episodes">-</p> </td>
+      </tr>
+      <tr> <!-- Row 3-->
+    
+        <td> <p >Score</p> </td>
+        <td> <p id="rec_score">-</p> </td>
+    
+     </tr>
+    
+     <tr> <!-- Row 4-->
+    
+      <td> <p >Airing</p> </td>
+      <td> <p id="rec_airing">-</p> </td>
+    
+    </tr>
+     <tr> <!-- Row 5-->
+    
+      <td rowspan="2"> <p>Descirption</p> </td>
+      <td rowspan="2"> <p id="rec_desc">-</p> </td>
+          
+    </tr>
+    
+    <tr> <!-- Row 6-->
+      <td> <!-- Diese Row ist da, damit mehr Platz für die Description is--> </td>
+    </tr>
+    
+    <tr> <!-- Row 7-->
+      <td> <p>Genres</p></td>
+      <td> <p id="rec_genre">-</p> </td>
+    </tr>
+    <tr>
+      <tr> <!-- Row 8-->
+        <td> <p>MyAnimeList ID</p>
+        </td>
+        <td id="rec_id">-</td>
+      </tr>
+      <td><button id="button" onclick="getAllInfos()">-</button></td>
+      <td>
+      </td>
+    </tr>
+    </table>
+    
+
+  
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animation Text</title>
+    <link rel="stylesheet" href="../css/index.css">
+  </head>
+  <body>
+
+<div class="container">
+  <span class="text1">Welcome to</span>
+  <span onclick="window.open('quotes.html')" class="text2">AniSearch02</span>
+  <button onclick="openForm()" class="fade">Get started</button>
+  
+
+  <div class="form-popup" id="myForm">
+    <form class="form-container">
+      <h1 class="Where">Where do you wanna go?</h1>
+      <button type="button" onclick="window.open('quotes.html', '_self')" class="btn">Anime Quotes</button>
+      <button type="button" onclick="window.open('page2.html', '_self')" class="btn">Anime Search</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+  
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+
+
+</div>
+
+
+
+  </body>
+</html>
